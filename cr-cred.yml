@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: azure-container-registry-credentials
+data:
+  .dockerconfigjson: ewoJImF1dGhzIjogewoJCSJkZW5vdWVtZW50cmVnaXN0cnkuYXp1cmVjci5pbyI6IHsKCQkJImF1dGgiOiAiWkdWdWIzVmxiV1Z1ZEhKbFoybHpkSEo1T25OTFVVZFdXVkJDT1djd05tVnpielY1ZDBGNVJHWkZaRTl0TDNSWlEzcGEiCgkJfQoJfQp9
+type: kubernetes.io/dockerconfigjson
