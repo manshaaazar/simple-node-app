@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: denouement
+spec:
+  replicas: "1"
+  selector:
+    matchLabels:
+      app: denouementapi
+  template:
+    metadata:
+      labels:
+        app: denouementapi
+    spec:
+      imagePullSecrets:
+        - name: azure-container-registry-credentials
+      containers:
+        - name: denouementapi
+          image: denouementregistry.azurecr.io/manshaehsan/denouementapi:latest
+          resources:
+            limits:
+              memory: "500Mi"
+              cpu: "250m"
+          ports:
+            - containerPort: 8080
