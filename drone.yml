@@ -1,4 +1,5 @@
 name: simple-node-app
+kind: kubernetes
 trigger:
   branch:
     - master
