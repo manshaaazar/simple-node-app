@@ -44,7 +44,7 @@ steps:
       - echo $config ~/.kube/config
       - apt-get update -y
       - apt-get upgrade -y
-      - apt-get install snapd 
-      - apt-get install kubectl
+      - apt-get install snapd -y
+      - snap install kubectl -y
       - kubectl version --client
       - kubectl apply -f . -n denouement
