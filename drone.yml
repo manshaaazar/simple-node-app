@@ -12,7 +12,7 @@ steps:
     from_secret: docker_username
    password:
     from_secret: docker_password
-   repo: https://index.docker.io/v1/blackhole
+   repo: https://index.docker.io/v1/manshaehsan/blackhole
    registry: https://index.docker.io/v1
    tags: latest
     
