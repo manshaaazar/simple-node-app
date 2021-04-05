@@ -1,5 +1,6 @@
 name: simple-node-app
-kind: kubernetes
+kind: pipeline
+type: kubernetes
 trigger:
   branch:
     - master
