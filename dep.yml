@@ -15,7 +15,8 @@ spec:
       labels:
         app.kubernetes.io/name: denouement
     spec:
-      imagePullSecrets: azure-container-registry-credentials
+      imagePullSecrets: 
+      - name: azure-container-registry-credentials
       containers:
         - name: denouement
           image: denouementregistry.azurecr.io/manshaehsan/denouementapi:latest
