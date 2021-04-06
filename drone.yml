@@ -17,7 +17,7 @@ steps:
       tags: latest
   - name: deploy
     environment:
-      config: |
+      config: >-
         apiVersion: v1  
         clusters:
         - cluster:
@@ -43,7 +43,6 @@ steps:
       - mkdir ~/./kube
       - echo $config ~/.kube/config
       - apt-get update -y
-      - apt-get upgrade -y
       - apt-get install snapd -y
       - snap install kubectl -y
       - kubectl version --client
