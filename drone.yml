@@ -55,5 +55,6 @@ steps:
   - name: slack-notification
     image: plugins/slack
     settings: 
-     from_secret: slack_notification_webhook
+     webhook:
+      from_secret: slack_notification_webhook
     channel: automation
