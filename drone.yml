@@ -52,3 +52,8 @@ steps:
       - kubectl apply -f service.yml
       - kubectl apply -f cr-cred.yml
       - kubectl apply -f dep.yml
+  - name: slack-notification
+   image: plugins/slack
+   settings: 
+    from_secret: slack_notification_webhook
+    channel: automation
