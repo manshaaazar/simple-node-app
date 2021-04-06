@@ -21,4 +21,4 @@ spec:
         - name: denouement
           image: denouementregistry.azurecr.io/manshaehsan/denouementapi:latest
           ports:
-            - containerPort: 8080
+            - containerPort: 3000
